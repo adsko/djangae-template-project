@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')^2$6o(xmd(94_14a2m&hbv7(vm&mi7)9cjp&sq%^fg6h^v()q'
+SECRET_KEY = 'generate-here-a-secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'project.home',
-    'project.polls'
+    'project.polls',
+    'registration'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -122,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/media/'
+ACCOUNT_ACTIVATION_DAYS = 3

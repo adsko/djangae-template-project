@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^$', 'project.home.views.index'),
     url(r'^home/$', include('project.home.urls')),
     url(r'^polls/$', include('project.polls.urls')),
+    url(r'^accounts/', include('registration.backends.hmac.urls')),
 ]
