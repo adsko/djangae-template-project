@@ -124,3 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/media/'
 ACCOUNT_ACTIVATION_DAYS = 3
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

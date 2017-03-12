@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 
+{% block navigation %}
+    {% include 'navigation.html' with home_tab='True'%}
+{% endblock %}
+
+
 {% block content %}
 <div class="mdl-layout__tab-panel is-active" id="home">
     <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">

@@ -1,0 +1,11 @@
+Hello {{ user }},
+
+Thank you for registering on {{ site.name }}! To complete registration click on activation key!
+
+Here is you'r activation key:
+{{ site.name}}/accounts/activate/{{ activation_key }}/
+
+You have {{ expiration_days }} days to finish registration.
+
+Best regards,
+Andy
