@@ -12,6 +12,7 @@ appengine-generated/
 .idea/dictionaries
 
 # Sensitive or high-churn files:
+.idea
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.xml
@@ -146,3 +147,10 @@ ENV/
 .gaedata_dev
 src/sitepackages/djangae
 src/sitepackages/django
+
+src/rest_framework
+src/rest_framework_docs
+src/registration
+src/templates/rest_framework
+src/templates/rest_framework_docs
+src/templates/static_files/rest_framework_docs

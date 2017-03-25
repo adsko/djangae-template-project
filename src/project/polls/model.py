@@ -14,12 +14,6 @@ class Question(models.Model):
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
-    def capitaliki(self):
-        return self.question_text.capitalize()
-
-    def cena_netto(self):
-        return self.cena_brutto * 0.77
-
 class Choice(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
